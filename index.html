@@ -56,13 +56,20 @@
           <div class="w3-white w3-text-grey w3-card-4" id="esquerda">
             <!-- @falvojr: This container has been modified to not use a profile picture. -->
             <div  class="w3-container">
-              <h2>Gabriel Antonio</h2>
+              <div class="info-text">
+                <h2>Gabriel Antonio</h2>
+              </div>
+              <div class="info-image">
+              <img id="img-person" src="./img/image_person.png" alt="">
+            </div>
             </div>
             <div class="w3-container">
-              <p class="info-pessoal"><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Estudante de TI</p>
-              <p class="info-pessoal"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>São Vicente-SP, Brasil</p>
-              <p class="info-pessoal"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>ga170120@gmail.com</p>
-              <p class="info-pessoal"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>(13) 99610-6467</p>
+                <div class="info-person">
+                  <p class="info-pessoal" ><i id="info-pessoal" class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Estudante de TI</p>
+                  <p class="info-pessoal" ><i id="info-pessoal" class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>São Vicente-SP, Brasil</p>
+                  <p class="info-pessoal" ><i id="info-pessoal" class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>ga170120@gmail.com</p>
+                  <p class="info-pessoal" ><i id="info-pessoal" class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>(13) 99610-6467</p>
+                </div>
               <hr>
   
               <p class="w3-large">
@@ -78,7 +85,7 @@
               </div>
               <p style="margin-top: 10px;">JavaScript</p>
               <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:40%">40%</div>
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:60%">60%</div>
               </div>
               <p style="margin-top: 10px;">MySQL</p>
               <div class="w3-light-grey w3-round-xlarge w3-small">
@@ -86,17 +93,18 @@
               </div>
               <p style="margin-top: 10px;">Java</p>
               <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:50%">60%</div>
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:60%">60%</div>
+              </div>
+              <p style="margin-top: 10px;">Pacote Office</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:60%">60%</div>
               </div>
               <br>
+              <hr>
   
               <p class="w3-large w3-text-theme">
                 <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-indigo"></i>Idiomas</b>
               </p>
-              <p>Português</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%; margin-bottom: 10px;"></div>
-              </div>
               <p>Inglês</p>
               <div class="w3-light-grey w3-round-xlarge">
                 <div class="w3-round-xlarge w3-indigo" style="height:24px;width:80%; margin-bottom: 10px"></div>
@@ -122,15 +130,15 @@
           <!-- Configurar aqui. -->
           <div class="w3-container w3-card w3-white w3-margin-bottom" id="direita">
 
-
             <input onclick="toggleDarkMode()" id="switch"  type="checkbox" name="theme">
-
-
 
             
             <label for="switch">Toggle</label>
+            <div class="container">
+              <img src="./img/Ericsson-Logo.png" class="logo" alt="">
+            </div>
             <h2 class="w3-text-grey w3-padding-16" id="sobre"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-indigo" ></i>Sobre</h2>
-            <p style="font-size: 18px">Tenho objetivos de <em><b>estágio em programação, desenvolvimento de software ou aplicativos.</b></em></p>
+            <p style="font-size: 18px">Tenho objetivos de <em><b>estágio em ciência de dados, desenvolvimento de software ou aprendizado de máquina.</b></em></p>
 
           <div class="w3-container w3-card w3-white w3-margin-bottom" id="direita2">
             <h2 class="w3-text-grey w3-padding-16" id="experiencias">
@@ -143,12 +151,16 @@
               <h5 style="font-size: 18px" class="w3-opacity"><b>Etec Aristóteles Ferreira</b></h5>
               <h6 style="font-size: 16px" class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fevereiro 2020 - <span class="w3-tag w3-indigo w3-round">Dezembro 2020</span></h6>
               <p style="font-size: 16px">Participação no TCC. Onde fiquei responsável na parte de <b style="text-decoration: underline;">documentação do projeto</b> e também participei do <b style="text-decoration: underline;">desenvolvimento de códigos e o design dele</b>. O resultado do nosso projeto foi a construção de uma versão demo game folclórico brasileiro.</p>
-              <a href="./InstaladorEndi.exe"><button type="button" class="btn btn-primary btn-lg"><i class="bi bi-download">&nbsp; Link do instalador Game </i></button></a>
+              
+              <div class="botao">
+                <a class="game" href="./InstaladorEndi.exe"><button type="button" class="btn btn-primary btn-lg" id="button-animate"><i class="bi bi-download">&nbsp; Link do instalador Game </i></button></a>
+              </div>
               <hr>
               <h5 style="font-size: 18px" class="w3-opacity"><b>Grupo de Liturgia da Igreja</b></h5>
               <h6 style="font-size: 16px" class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Março 2017 - <span class="w3-tag w3-indigo w3-round">Dezembro 2019</span></h6>
               <p style="font-size: 16px">Participação da realização de leituras, organizações das estruturas litúrgicas e escrita de preces dos fiéis para a Igreja.</b></p>
             </div>
+            <hr>
           </div>
   
           <div class="w3-container w3-card w3-white" id="direita3">
@@ -278,6 +290,23 @@
       function toggleDarkMode() {
             const body = document.body;     
             body.classList.toggle('dark-mode');
+            
+            const input = document.getElementById('switch');
+
+input.addEventListener('change', () => {
+  if (input.checked) {
+    document.querySelector(".logo").style.color = "#111";
+    document.querySelector(".logo").style.background = "#274bd5";
+    document.querySelector(".logo").style.boxShadow = "0 0 100px #889abe";
+  } else {
+    console.log('The input was not pressed.');
+    document.querySelector(".logo").style.color = "#fff";
+    document.querySelector(".logo").style.background = "#fff";
+    document.querySelector(".logo").style.boxShadow = "0 0 00px #fff";
+  }
+});
+
+        
             
       }
             

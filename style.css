@@ -1,5 +1,5 @@
 html{
-    --color-headings: #0077FF;
+    --color-headings: #1543cd;
 }
 
 input[type=checkbox]{
@@ -18,6 +18,61 @@ label {
     border-radius: 100px;
     position: relative;
     top: 6px;
+}
+
+/*animação*/
+#button-animate:hover
+  {
+    animation-duration: 0.5s;
+    animation-name: animation;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: alternate;
+  }
+  
+  @keyframes animation {
+    0%{
+      transform: scale(1);
+    }
+
+    100%{
+      transform: scale(1.1);
+    }
+  }
+
+
+
+
+.info-person{
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.logo{
+  width: 20%;
+  height: 20%;
+  margin-top: -10px;
+  border-radius: 10%
+}
+
+
+
+.info-text {
+  display: inline-block;
+}
+.info-image{
+  display: flex;
+  flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+  align-content:center;
+  
+}
+
+.info-image #img-person{
+  width: 50%;
+  height: 50%;
+   border-radius: 20px;
 }
 
 label::after{
@@ -44,3 +99,5 @@ input:checked + label::after {
 label:active:after {
     width: 45px;
 }
+
+
